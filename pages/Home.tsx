@@ -48,7 +48,7 @@ export const Home: React.FC = () => {
             <div className="p-6 font-mono text-sm md:text-base overflow-x-auto">
               <div className="flex">
                 <div className="text-gray-600 text-right pr-4 select-none border-r border-vs-border/30 mr-4 hidden md:block">
-                  1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15<br/>16
+                  1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15<br/>16<br/>17<br/>18<br/>
                 </div>
                 <div className="flex-1">
                   <p><span className="text-vs-purple">package</span> <span className="text-vs-text">com.portfolio</span>;</p>
