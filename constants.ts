@@ -41,11 +41,25 @@ export const PROJECTS: Project[] = [
 
 export const EXPERIENCES: Experience[] = [
   {
+    date: "12/2025 - Atual Projeto",
+    role: "UniFlow",
+    company: "Projeto Pessoal",
+    location: "Remoto",
+    description: "Desenvolvimento de plataforma de automação de fluxos de trabalho com integração a múltiplos serviços (Notion, Asana, etc). Foco em alta performance e escalabilidade."
+  },
+  {
     date: "02/2025 - Atual",
     role: "Desenvolvedor",
     company: "Mercato Automação",
     location: "Porto Alegre - RS",
     description: "Desenvolvimento de API para centralizar dados, eliminando gargalos. Criação de app mobile/web para gestão de polos (Nashville/Canoas)."
+  },
+  {
+    date: "01/2025",
+    role: "Debug.Me",
+    company: "Projeto Pessoal",
+    location: "Remoto",
+    description: "Aplicação de suporte inteligente integrando modelo de IA Llama localmente. Implementação de arquitetura offline-first, permitindo automação de suporte Nível 1 mesmo sem conexão à internet."
   },
   {
     date: "01/2023 - 03/2024",

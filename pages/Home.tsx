@@ -62,7 +62,7 @@ export const Home: React.FC = () => {
                     
                     <p><span className="text-vs-comment">/**</span></p>
                     <p><span className="text-vs-comment"> * Foco em automação e alta performance.</span></p>
-                    <p><span className="text-vs-comment"> * Experiência com arquiteturas de IA Offline.</span></p>
+                    <p><span className="text-vs-comment"> * Experiência com arquiteturas de API e Microserviços.</span></p>
                     <p><span className="text-vs-comment"> */</span></p>
                     
                     <p><span className="text-vs-purple">public</span> <span className="text-vs-blue">void</span> <span className="text-vs-yellow">introduce</span>() {'{'}</p>
