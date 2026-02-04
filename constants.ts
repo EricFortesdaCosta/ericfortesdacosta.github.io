@@ -10,38 +10,30 @@ export const SOCIAL_LINKS: SocialLink[] = [
 
 export const PROJECTS: Project[] = [
   {
-    title: "Debug Me",
+    title: " Suport I.A - Assistente de Suporte Nível 1",
     description: "Aplicação de suporte inteligente integrando modelo de IA Llama localmente. Arquitetura offline-first para automação de suporte Nível 1.",
-    image: "https://placehold.co/600x400/1e1e1e/569cd6?text=Debug+Me+AI",
-    tags: ["React", "Llama AI", "Offline-first"]
+    image: "https://placehold.co/600x400/1e1e1e/569cd6?text=Suport.AI",
+    tags: ["React", "Llama AI", "Offline-first"],
+    link: "https://github.com/EricFortesdaCosta/n1-a.i"
   },
   {
-    title: "Mercato API & Mobile",
+    title: "Modelo de API Multifuncional",
     description: "API para centralização de dados de múltiplos sistemas e aplicação unificada para gestão de polos (EUA/BR).",
-    image: "https://placehold.co/600x400/1e1e1e/ce9178?text=Mercato+API",
-    tags: ["Java", "API REST", "Integração"]
+    image: "https://placehold.co/600x400/1e1e1e/ce9178?text=API+Multifuncional",
+    tags: ["Java", "API REST", "Integração"],
+    link: "https://github.com/EricFortesdaCosta/Api-Multifuncional-Modelo"
   },
   {
-    title: "Automação Tintas Killing",
-    description: "Aplicação desktop (Tkinter/Pandas) para controle de estoque com leitura de código de barras. Redução de 4h no inventário.",
-    image: "https://placehold.co/600x400/1e1e1e/dcdcaa?text=Python+Auto",
-    tags: ["Python", "Pandas", "Tkinter"]
-  },
-  {
-    title: "OptimusTech",
-    description: "Site desenvolvido durante o desafio 7DaysOfCode da escola Alura, utilizando CSS e HTML.",
-    image: "https://placehold.co/600x400/1e1e1e/ce9178?text=OptimusTech",
-    tags: ["HTML", "CSS", "Frontend"]
-  },
-  {
-    title: "Réplica Spotify",
-    description: "Desenvolvimento do site 'Spotify' no projeto Imersão Front-End, utilizando HTML, CSS, JavaScript e Angular.",
-    image: "https://placehold.co/600x400/1e1e1e/1db954?text=Spotify",
-    tags: ["Angular", "Clone", "UI/UX"]
+    title: "Pro:M - Mercato Automação",
+    description: "Aplicativo Mobile multi-plataforma para gestão de vendas e estoque, integrado a uma API centralizada.",
+    image: "https://placehold.co/600x400/1e1e1e/dcdcaa?text=Pro:M+-+Mercato+Automa%C3%A7%C3%A3o",
+    tags: ["React Native", "TypeScript", "API REST"],
+    android: "https://play.google.com/store/apps/details?id=br.com.mercatocloud.testemercato",
+    ios: "https://apps.apple.com/us/app/pro-m-mercato-automa%C3%A7%C3%A3o/id6757434183"
   },
   {
     title: "+PraTI | Trilha FullStack",
-    description: "Imersão nos elementos essenciais do desenvolvimento web, cobrindo front-end e back-end.",
+    description: "(Curso) Imersão nos elementos essenciais do desenvolvimento web, cobrindo front-end e back-end.",
     image: "https://placehold.co/600x400/1e1e1e/c586c0?text=%2BpraTi",
     tags: ["FullStack", "Web", "Training"]
   }
@@ -49,7 +41,7 @@ export const PROJECTS: Project[] = [
 
 export const EXPERIENCES: Experience[] = [
   {
-    date: "04/2024 - Atual",
+    date: "02/2025 - Atual",
     role: "Desenvolvedor",
     company: "Mercato Automação",
     location: "Porto Alegre - RS",

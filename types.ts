@@ -16,6 +16,13 @@ export interface Project {
   description: string;
   image: string;
   tags: string[];
+  // Optional single link (backward-compatible)
+  link?: string;
+  // Optional multiple links (e.g., { label: 'Android', href: '...' })
+  links?: { label: string; href: string }[];
+  // Optional platform-specific links
+  android?: string;
+  ios?: string;
 }
 
 export interface Experience {
