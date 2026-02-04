@@ -46,7 +46,7 @@ export const Contact: React.FC = () => {
               </div>
 
               <div className="pt-4 border-t border-vs-border/30">
-                  <span className="text-vs-green">user@eric-portfolio</span>:<span className="text-vs-blue">~</span>$ <span className="animate-blink">_</span>
+                  <span className="text-vs-green">user@EricFortesdaCosta</span>:<span className="text-vs-blue">~</span>$ <span className="animate-blink">_</span>
               </div>
           </div>
       </div>

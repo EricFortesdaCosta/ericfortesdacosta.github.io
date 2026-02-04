@@ -10,11 +10,11 @@ export const SOCIAL_LINKS: SocialLink[] = [
 
 export const PROJECTS: Project[] = [
   {
-    title: " Suport I.A - Assistente de Suporte Nível 1",
+    title: " Debug.Me - Assistente de Suporte Nível 1",
     description: "Aplicação de suporte inteligente integrando modelo de IA Llama localmente. Arquitetura offline-first para automação de suporte Nível 1.",
-    image: "https://placehold.co/600x400/1e1e1e/569cd6?text=Suport.AI",
+    image: "https://placehold.co/600x400/1e1e1e/569cd6?text=Debug.Me",
     tags: ["React", "Llama AI", "Offline-first"],
-    link: "https://github.com/EricFortesdaCosta/n1-a.i"
+    link: "https://github.com/EricFortesdaCosta/debugme-platChar"
   },
   {
     title: "Modelo de API Multifuncional",
@@ -79,17 +79,17 @@ export const EDUCATIONS: Education[] = [
     type: "graduation"
   },
   {
-    date: "2023",
-    title: "Java | POO + Projetos",
-    institution: "Udemy",
-    description: "Curso completo de Java abrangendo POO, arrays, exceções e desenvolvimento desktop/web.",
+    date: "Em andamento (2º Modulo)",
+    title: "Programa Carreira Alura - Java FullStack",
+    institution: "Alura",
+    description: "Foco em desenvolvimento fullstack com React e Node.js.",
     type: "course"
   },
   {
     date: "2023",
-    title: "Curso de JavaScript",
-    institution: "Curso em Video",
-    description: "Conteúdo completo sobre ECMAScript e lógica de programação.",
+    title: "Java | POO + Projetos",
+    institution: "Alura",
+    description: "Curso completo de Java abrangendo POO, arrays, exceções e desenvolvimento desktop/web.",
     type: "course"
   }
 ];
