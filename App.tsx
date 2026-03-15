@@ -29,7 +29,7 @@ function App() {
       <div className="flex flex-col min-h-screen bg-vs-bg text-vs-text overflow-x-hidden relative font-sans">
         <Navbar />
         
-        <main className="flex-grow z-10 relative">
+        <main className="flex-grow z-10 relative pb-16 md:pb-0">
           <AnimatedRoutes />
         </main>
         
