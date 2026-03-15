@@ -27,8 +27,8 @@ export const PROJECTS: Project[] = [
     title: "Orkestral - Plataforma de Criação e Automação de Fluxos de Serviços",
     description: "Plataforma de automação de fluxos de serviço com integração a múltiplos sistemas.",
     image: "https://placehold.co/600x400/1e1e1e/569cd6?text=Orkestral",
-    tags: ["React", "Node.js", "Integração"],
-    link: "https://github.com/EricFortesdaCosta/orkestral"
+    tags: ["React", "Node.js", "Integração", "Automação", "Api REST"],
+    link: "https://ericfortesdacosta.github.io/Orkestral/"
   },
   {
     title: "Pro:M - Mercato Automação",
