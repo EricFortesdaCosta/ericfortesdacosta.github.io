@@ -24,6 +24,13 @@ export const PROJECTS: Project[] = [
     link: "https://github.com/EricFortesdaCosta/Api-Multifuncional-Modelo"
   },
   {
+    title: "Orkestral - Plataforma de Criação e Automação de Fluxos de Serviços",
+    description: "Plataforma de automação de fluxos de serviço com integração a múltiplos sistemas.",
+    image: "https://placehold.co/600x400/1e1e1e/569cd6?text=Orkestral",
+    tags: ["React", "Node.js", "Integração"],
+    link: "https://github.com/EricFortesdaCosta/orkestral"
+  },
+  {
     title: "Pro:M - Mercato Automação",
     description: "Aplicativo Mobile multi-plataforma para gestão de vendas e estoque, integrado a uma API centralizada.",
     image: "https://placehold.co/600x400/1e1e1e/dcdcaa?text=Pro:M+-+Mercato+Automa%C3%A7%C3%A3o",
