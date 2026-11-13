@@ -2,8 +2,11 @@ import React from 'react';
 import { Terminal as TerminalIcon } from 'lucide-react';
 import { CyberContainer } from '../components/CyberContainer';
 import { SOCIAL_LINKS } from '../constants';
+import { useLanguage } from '../context/LanguageContext';
 
 export const Contact: React.FC = () => {
+  const { t } = useLanguage();
+
   return (
     <CyberContainer className="max-w-3xl">
       <div className="bg-vs-bg border border-vs-border rounded shadow-xl overflow-hidden mt-8">
@@ -11,21 +14,21 @@ export const Contact: React.FC = () => {
           <div className="bg-vs-activity px-4 py-2 flex items-center justify-between border-b border-vs-border">
               <div className="flex items-center gap-2">
                   <TerminalIcon size={14} className="text-gray-400" />
-                  <span className="text-xs text-gray-300 font-mono">bash - user@eric-portfolio</span>
+                  <span className="text-xs text-gray-300 font-mono">{t.contact.header}</span>
               </div>
           </div>
 
           {/* Terminal Content */}
           <div className="p-6 font-mono text-sm space-y-4">
               <div>
-                  <span className="text-vs-comment"># Iniciar processo de contato</span>
+                  <span className="text-vs-comment">{t.contact.comment}</span>
                   <br/>
                   <span className="text-vs-green">user@eric-portfolio</span>:<span className="text-vs-blue">~</span>$ ./contact.sh --init
               </div>
 
               <div className="text-gray-300">
-                  <p>Initializing communication channels...</p>
-                  <p className="text-vs-accent">Done.</p>
+                  <p>{t.contact.initMsg1}</p>
+                  <p className="text-vs-accent">{t.contact.initMsg2}</p>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">

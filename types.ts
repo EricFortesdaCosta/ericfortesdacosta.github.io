@@ -1,5 +1,7 @@
 import { LucideIcon } from 'lucide-react';
 
+export type Language = 'pt' | 'en' | 'es';
+
 export interface NavItem {
   label: string;
   path: string;

@@ -1,6 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { FileCode, FileJson, FileType, Terminal } from 'lucide-react';
+import { FileCode, FileJson, FileType, Terminal, Globe } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
+import { Language } from '../types';
 
 const NavItem = ({ to, icon: Icon, label, extension, onClick }: { to: string; icon: any; label: string; extension: string; onClick?: () => void }) => (
   <NavLink
@@ -18,22 +20,65 @@ const NavItem = ({ to, icon: Icon, label, extension, onClick }: { to: string; ic
   </NavLink>
 );
 
+const LanguageSwitcher = () => {
+  const { language, setLanguage } = useLanguage();
+  const languages: { code: Language; label: string }[] = [
+    { code: 'pt', label: 'PT' },
+    { code: 'en', label: 'EN' },
+    { code: 'es', label: 'ES' },
+  ];
+
+  return (
+    <div className="flex items-center bg-vs-bg border border-vs-border rounded text-[11px] font-mono p-0.5 shadow-inner" title="Language / Idioma">
+      <span className="px-1.5 text-gray-500 flex items-center gap-1 select-none">
+        <Globe size={11} className="text-vs-blue" />
+        <span className="hidden lg:inline text-[10px] text-gray-400">lang:</span>
+      </span>
+      {languages.map(({ code, label }) => {
+        const isActive = language === code;
+        return (
+          <button
+            key={code}
+            type="button"
+            onClick={() => setLanguage(code)}
+            className={`px-2 py-0.5 rounded transition-all font-mono font-medium ${
+              isActive
+                ? 'bg-vs-accent text-white font-bold shadow-sm'
+                : 'text-gray-400 hover:text-vs-text hover:bg-white/5'
+            }`}
+            aria-label={`Change language to ${label}`}
+          >
+            {label}
+          </button>
+        );
+      })}
+    </div>
+  );
+};
+
 export const Navbar: React.FC = () => {
+  const { t } = useLanguage();
+
   return (
     <nav className="sticky top-0 z-50 w-full bg-vs-activity border-b border-vs-border">
       <div className="flex flex-col md:flex-row">
         {/* Mobile Header */}
-        <div className="flex items-center justify-between p-4 md:hidden bg-vs-activity text-vs-text">
-          <span className="font-mono font-bold text-sm">ERIC_FORTES.workspace</span>
+        <div className="flex items-center justify-between p-3 md:hidden bg-vs-activity text-vs-text">
+          <span className="font-mono font-bold text-xs truncate">{t.nav.workspace}</span>
+          <LanguageSwitcher />
         </div>
 
         {/* Desktop Tabs */}
-        <div className="hidden md:flex flex-col md:flex-row w-full bg-vs-activity md:bg-[#2d2d2d] overflow-x-auto">
-          <div className="flex flex-col md:flex-row min-w-max">
-            <NavItem to="/" icon={FileCode} label="home" extension=".tsx" />
-            <NavItem to="/resume" icon={FileJson} label="resume" extension=".json" />
-            <NavItem to="/projects" icon={FileType} label="projects" extension=".ts" />
-            <NavItem to="/contact" icon={Terminal} label="contact" extension=".sh" />
+        <div className="hidden md:flex items-center justify-between w-full bg-vs-activity md:bg-[#2d2d2d] pr-3 overflow-x-auto">
+          <div className="flex flex-row min-w-max">
+            <NavItem to="/" icon={FileCode} label={t.nav.home} extension=".tsx" />
+            <NavItem to="/resume" icon={FileJson} label={t.nav.resume} extension=".json" />
+            <NavItem to="/projects" icon={FileType} label={t.nav.projects} extension=".ts" />
+            <NavItem to="/contact" icon={Terminal} label={t.nav.contact} extension=".sh" />
+          </div>
+
+          <div className="ml-4 shrink-0">
+            <LanguageSwitcher />
           </div>
         </div>
       </div>
@@ -52,7 +97,7 @@ export const Navbar: React.FC = () => {
             }
           >
             <FileCode size={16} className="text-vs-blue" />
-            <span>home.tsx</span>
+            <span>{t.nav.home}.tsx</span>
           </NavLink>
           <NavLink
             to="/resume"
@@ -65,7 +110,7 @@ export const Navbar: React.FC = () => {
             }
           >
             <FileJson size={16} className="text-vs-yellow" />
-            <span>resume.json</span>
+            <span>{t.nav.resume}.json</span>
           </NavLink>
           <NavLink
             to="/projects"
@@ -78,7 +123,7 @@ export const Navbar: React.FC = () => {
             }
           >
             <FileType size={16} className="text-vs-purple" />
-            <span>projects.ts</span>
+            <span>{t.nav.projects}.ts</span>
           </NavLink>
           <NavLink
             to="/contact"
@@ -91,7 +136,7 @@ export const Navbar: React.FC = () => {
             }
           >
             <Terminal size={16} className="text-vs-orange" />
-            <span>contact.sh</span>
+            <span>{t.nav.contact}.sh</span>
           </NavLink>
         </div>
       </div>
